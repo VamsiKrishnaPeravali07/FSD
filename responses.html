@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Responses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Thank You! Survey Responses</h2>
+    <ul class="list-group">
+        {% for resp in responses %}
+            <li class="list-group-item">
+                <strong>{{ resp.name }}</strong> liked <strong>{{ resp.favorite_movie }}</strong>
+                ({{ resp.genre }}, Rated: {{ resp.rating }}) and would recommend: {{ resp.recommend }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('survey') }}" class="btn btn-link mt-3">Go back to survey</a>
+</div>
+</body>
+</html>
