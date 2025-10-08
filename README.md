@@ -1,78 +1,58 @@
-Movie Survey Form - Flask Web Application
-Overview
-This is a simple Flask web application that collects movie preferences from users through a survey form. Users enter details like their name, favorite movie, rating, genre, and whether they would recommend the movie. All submissions are displayed in a summary page. The project demonstrates basic CRUD operations, form handling, Bootstrap integration, Jinja2 templating, and essential validation for a small full-stack application.
+# 🎬 Movie Survey Form – Flask Web Application
 
-Features
-Movie survey form with multiple fields (name, favorite movie, rating, genre, recommendation)
+A simple **Flask web application** that collects movie preferences from users through a survey form.  
+Users can enter their **name, favorite movie, rating, genre, and recommendation**, and view all submissions on a summary page.  
 
-Client-side and server-side form validation
+This project demonstrates **form handling, validation, CRUD basics, and Bootstrap integration** for a small full-stack application.  
 
-Responsive design using Bootstrap 5
+---
 
-Displays all submitted survey responses
+## ✨ Features
 
-Clean project layout for easy understanding and modification
+- 📋 Movie survey form with multiple fields:
+  - Name
+  - Favorite Movie
+  - Rating (1–5 stars)
+  - Genre (dropdown)
+  - Recommendation (Yes/No)
+- ✅ Client-side and server-side form validation
+- 📱 Responsive design using **Bootstrap 5**
+- 📝 Displays all submitted survey responses in a summary page
+- 🗂️ Clean project layout for easy modification
+- 🚀 Ready to run locally, and deployable to **Render / Heroku**
 
-Ready to run locally, deployable to Render or Heroku
+---
 
-Project Structure
-text
-movie-survey/
-│
-├── app.py
-├── requirements.txt
-├── static/
-│   └── style.css
-├── templates/
-│   ├── survey.html
-│   └── responses.html
-Technologies Used
-Python 3.x
+---
 
-Flask
+## 🛠️ Technologies Used
 
-HTML5 & CSS3
+- **Python 3.x**
+- **Flask**
+- **HTML5 & CSS3**
+- **Bootstrap 5**
+- **Jinja2 (Flask templating engine)**
+- Minimal **JavaScript**
 
-Bootstrap 5
+---
 
-Jinja2 (for templates)
+🎮 Usage
 
-Minimal JavaScript
-
-Setup Instructions
-1. Clone this repository
-bash
-git clone https://github.com/<your-username>/movie-survey.git
-cd movie-survey
-2. Create and activate a virtual environment (optional but recommended)
-bash
-python3 -m venv venv
-source venv/bin/activate
-3. Install dependencies
-bash
-pip install -r requirements.txt
-4. Run the application
-bash
-python app.py
-
-
-Usage
 Fill in the survey form with your movie preferences.
 
-Submit the form — you’ll be redirected to the summary page showing all submissions made during this session.
+Submit the form — you’ll be redirected to a summary page showing all submissions.
 
-All responses are stored in memory (will reset if the app restarts). For persistent storage, integrate with a database like SQLite.
+All responses are stored in memory (will reset if the app restarts).
 
-Customizing
-Modify form fields in survey.html and backend handling in app.py as needed.
+For persistent storage, integrate with a database like SQLite / PostgreSQL.
 
-Change style by editing static/style.css or Bootstrap configuration.
+🎨 Customization
 
-Screenshots
-(Add screenshots showing the survey form, and the summary page with sample submissions.)
+✏️ Modify form fields in templates/survey.html
 
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+🖥️ Update backend handling in app.py
 
-License
-This project is licensed under the MIT License.
+🎨 Change design in static/style.css or tweak Bootstrap classes
+
+
+
